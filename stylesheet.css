@@ -1,10 +1,74 @@
-nav ul  {
-  position:absolute;
-  right: 100px;
+/*Navigation menu*/
+header {
+  background-color: #473a2d;
+width: 100%;
 }
-img {
-  float:left;
+.wrapper {
+width: 1200px;
+margin:auto;
 }
-h2 {
+div.wrapper img {
+  width:180px;
+  height:55px;
+}
+.nav_panel {
+  float:right;
+  display: inline;
+}
+.nav_list {
+  float: left;
+  margin-right: 50px;
+}
+.nav_lang {
+  float:right;
+  border-left: 3px solid #cfcbc8;
+}
+ul.nav_list li{
+  list-style-type: none;
+  display: inline;
+  font-size: 13px;
+  color:#ffffff;
+}
+ul.nav_lang li{
+  font-size: 15px;
+
+}
+ul.nav_list li a{
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  text-align: justify;
+
+}
+ul.nav_lang li a{
+  color: #ffffff;
+}
+.nav_menu, .nav_lang {
+  display: inline-block;
+
+    }
+
+/*Слайдер*/
+div.slider img{
+}
+.slider_dot {
+  border-radius: 50%;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  color: #ffffff;
+}
+/*Pakalpojumi*/
+
+ #pakalpojumi {
   text-align: center;
+  border-bottom: 1px dotted ;
+  text-transform: capitalize;
+}
+#pakalpojumi_headings {
+  text-transform: capitalize;
+  text-align: center;
+}
+ul.pakalpojumi_lists li{
+  list-style-type: none;
 }
