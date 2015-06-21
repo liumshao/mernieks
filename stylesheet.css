@@ -1,15 +1,16 @@
 /*Navigation menu*/
 header {
   background-color: #473a2d;
-width: 100%;
+width: 1400px;
+height: 94px;
 }
 .wrapper {
-width: 1200px;
-margin:auto;
+width: 1400px;
 }
-div.wrapper img {
+.wrapper img {
   width:180px;
   height:55px;
+  margin-top: 27px;
 }
 .nav_panel {
   float:right;
@@ -18,38 +19,45 @@ div.wrapper img {
 .nav_list {
   float: left;
   margin-right: 50px;
+
 }
 .nav_lang {
   float:right;
-  border-left: 3px solid #cfcbc8;
-}
-ul.nav_list li{
-  list-style-type: none;
-  display: inline;
-  font-size: 13px;
-  color:#ffffff;
-}
-ul.nav_lang li{
-  font-size: 15px;
+  border-left: 1px solid #cfcbc8;
 
 }
-ul.nav_list li a{
+.nav_list li{
+  list-style-type: none;
+  display: inline;
+  font-size: 15px;
+  color:#ffffff;
+  margin: 24px;
+
+}
+.nav_lang li{
+  font-size: 13px;
+  margin: 24px;
+
+
+}
+.nav_list  a{
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-align: justify;
 
 }
-ul.nav_lang li a{
+.nav_lang  a{
   color: #ffffff;
 }
-.nav_menu, .nav_lang {
+.nav_menu,
+.nav_lang {
   display: inline-block;
-
     }
 
 /*Слайдер*/
-div.slider img{
+.slider img{
+  width: 1400px;
 }
 .slider_dot {
   border-radius: 50%;
@@ -58,17 +66,55 @@ div.slider img{
   height: 3px;
   color: #ffffff;
 }
+.slider_text {
+font-family: 'Open Sans', sans-serif;
+color: #f5f2eb;
+}
+
+.slider_text h3{
+ font-size: 44px;
+background-color: #3f3b3c;
+padding: 10px;
+display: inline;
+position: relative;
+}
+.slider_text p{
+font-size: 24px;
+background-color: #3f3b3c;
+padding: 10px;
+display: inline;
+position: relative;
+
+}
 /*Pakalpojumi*/
 
  #pakalpojumi {
   text-align: center;
   border-bottom: 1px dotted ;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 #pakalpojumi_headings {
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
 }
 ul.pakalpojumi_lists li{
   list-style-type: none;
+}
+.geodezija {
+  width: 33,333%;
+  float: left;
+  padding: 30px;
+  margin: 30px;
+}
+.mernieciba {
+  width: 33,333%;
+  float: left;
+  padding: 30px;
+    margin: 30px;
+}
+.zemesiericiba {
+  width: 33,333%;
+  float: left;
+  padding: 30px;
+    margin: 30px;
 }
