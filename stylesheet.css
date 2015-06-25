@@ -1,63 +1,61 @@
 /*Navigation menu*/
+
 header {
   background-color: #473a2d;
-width: 1400px;
-height: 94px;
+  width: 1400px;
+  height: 94px;
 }
 .wrapper {
-width: 1400px;
+  width: 1400px;
 }
 .wrapper img {
-  width:180px;
-  height:55px;
+  width: 180px;
+  height: 55px;
   margin-top: 27px;
 }
 .nav_panel {
-  float:right;
+  float: right;
   display: inline;
 }
 .nav_list {
   float: left;
   margin-right: 50px;
-
 }
 .nav_lang {
-  float:right;
+  float: right;
   border-left: 1px solid #cfcbc8;
-
 }
-.nav_list li{
+.nav_list li {
   list-style-type: none;
   display: inline;
   font-size: 15px;
-  color:#ffffff;
+  color: #ffffff;
   margin: 24px;
-
 }
-.nav_lang li{
+.nav_lang li {
   font-size: 13px;
   margin: 24px;
-
-
 }
-.nav_list  a{
+.nav_list a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-align: justify;
-
 }
-.nav_lang  a{
+.nav_lang a {
   color: #ffffff;
 }
-.nav_menu,
-.nav_lang {
+.nav_menu, .nav_lang {
   display: inline-block;
-    }
+}
 
 /*Слайдер*/
-.slider img{
+
+.slider img {
   width: 1400px;
+}
+.slider_item {
+  position: relative;
 }
 .slider_dot {
   border-radius: 50%;
@@ -67,54 +65,133 @@ width: 1400px;
   color: #ffffff;
 }
 .slider_text {
-font-family: 'Open Sans', sans-serif;
-color: #f5f2eb;
+  font-family: 'Open Sans', sans-serif;
+  color: #f5f2eb;
+  position: absolute;
+  left: 68px;
+  top: 100px;
+  padding: 25px;
+}
+.slider_text h3 {
+  font-size: 44px;
+  background-color: #3f3b3c;
+  padding: 25px;
+  display: inline-block;
+}
+.slider_text p {
+  font-size: 24px;
+  background-color: #3f3b3c;
+  padding: 25px;
 }
 
-.slider_text h3{
- font-size: 44px;
-background-color: #3f3b3c;
-padding: 10px;
-display: inline;
-position: relative;
-}
-.slider_text p{
-font-size: 24px;
-background-color: #3f3b3c;
-padding: 10px;
-display: inline;
-position: relative;
-
-}
 /*Pakalpojumi*/
 
- #pakalpojumi {
+#pakalpojumi {
   text-align: center;
-  border-bottom: 1px dotted ;
+  border-bottom: 1px dotted;
   text-transform: uppercase;
+  color: #95782d;
+  padding-bottom: 25px;
 }
 #pakalpojumi_headings {
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+  color: #473a15;
+  margin-left: 40px;
 }
-ul.pakalpojumi_lists li{
+ul.pakalpojumi_lists li {
   list-style-type: none;
+
 }
-.geodezija {
-  width: 33,333%;
-  float: left;
-  padding: 30px;
-  margin: 30px;
+ul.pakalpojumi_lists li::after{
+  content: "";
+  width: 55px;
+  border-bottom: 1px solid;
+  display: block;
+  color: #c7c5be;
+  margin-top: 17px;
+  margin-bottom: 17px;
 }
-.mernieciba {
-  width: 33,333%;
-  float: left;
-  padding: 30px;
-    margin: 30px;
+.geodezija, .mernieciba, .zemesiericiba {
+  width: 410px;
+  color: #534c38;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 40px;
+  margin-bottom: 40px;
 }
-.zemesiericiba {
-  width: 33,333%;
+.text_without_image{
+  overflow: hidden;
+  width: 310px;
+  margin-top: 40px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+}
+.geodezija img {
+  width: 52px;
+  height: 55px;
   float: left;
-  padding: 30px;
-    margin: 30px;
+  margin-top: 60px;
+}
+.mernieciba img {
+  width: 42px;
+  height: 54px;
+  float:left;
+  margin-top:60px;
+}
+.zemesiericiba img {
+  width: 64px;
+  height: 53px;
+  float: left;
+  margin-top: 60px;
+}
+.table1 {
+  width: 600px;
+  display: inline-block;
+}
+.table1 table, .table2 table{
+  border-collapse: collapse;
+}
+
+.table2 {
+  width: 600px;
+display: inline-block;
+margin-left: 62px;
+}
+.table1 p, .table2 p{
+  font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.table1 th, .table2 th{
+   font-family: 'Open Sans', sans-serif;
+   font-weight: bold;
+   font-size: 14px;
+   text-align: left;
+   padding: 16px;
+}
+.table1 tbody, .table2 tbody{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+    border-bottom: 2px solid #dfd9cf;
+}
+.table1 td, .table2 td {
+  padding: 16px;
+}
+.table1 tfoot{
+  font-style: italic;
+}
+.table1 tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+.table1 tbody tr:nth-child(odd) {
+    background-color: #f2ebe1;
+}
+.table2 tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+.table2 tbody tr:nth-child(odd) {
+    background-color: #f2ebe1;
 }
