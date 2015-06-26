@@ -101,9 +101,8 @@ header {
 }
 ul.pakalpojumi_lists li {
   list-style-type: none;
-
 }
-ul.pakalpojumi_lists li::after{
+ul.pakalpojumi_lists li::after {
   content: "";
   width: 55px;
   border-bottom: 1px solid;
@@ -121,14 +120,13 @@ ul.pakalpojumi_lists li::after{
   margin-left: 40px;
   margin-bottom: 40px;
 }
-.text_without_image{
+.text_without_image {
   overflow: hidden;
   width: 310px;
   margin-top: 40px;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-
 }
 .geodezija img {
   width: 52px;
@@ -139,8 +137,8 @@ ul.pakalpojumi_lists li::after{
 .mernieciba img {
   width: 42px;
   height: 54px;
-  float:left;
-  margin-top:60px;
+  float: left;
+  margin-top: 60px;
 }
 .zemesiericiba img {
   width: 64px;
@@ -148,50 +146,107 @@ ul.pakalpojumi_lists li::after{
   float: left;
   margin-top: 60px;
 }
+
+/*Pakalpojumi izcenojumi*/
+
 .table1 {
   width: 600px;
   display: inline-block;
 }
-.table1 table, .table2 table{
+.table1 table, .table2 table {
   border-collapse: collapse;
 }
-
 .table2 {
   width: 600px;
-display: inline-block;
-margin-left: 62px;
+  display: inline-block;
+  margin-left: 70px;
 }
-.table1 p, .table2 p{
+.table1 p, .table2 p {
   font-size: 18px;
-    font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
-.table1 th, .table2 th{
-   font-family: 'Open Sans', sans-serif;
-   font-weight: bold;
-   font-size: 14px;
-   text-align: left;
-   padding: 16px;
+.table1 th, .table2 th {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: left;
+  padding: 16px;
 }
-.table1 tbody, .table2 tbody{
+.table1 tbody, .table2 tbody {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-    border-bottom: 2px solid #dfd9cf;
+  border-bottom: 2px solid #dfd9cf;
 }
 .table1 td, .table2 td {
   padding: 16px;
 }
-.table1 tfoot{
+.table1 tfoot {
   font-style: italic;
 }
 .table1 tbody tr:nth-child(even) {
-    background-color: #fff;
+  background-color: #fff;
 }
 .table1 tbody tr:nth-child(odd) {
-    background-color: #f2ebe1;
+  background-color: #f2ebe1;
 }
 .table2 tbody tr:nth-child(even) {
-    background-color: #fff;
+  background-color: #fff;
 }
 .table2 tbody tr:nth-child(odd) {
-    background-color: #f2ebe1;
+  background-color: #f2ebe1;
+}
+
+/*Par mums*/
+
+.parmums {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #6d5639;
+  display: inline-block;
+  color: #b0a79c;
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 48px;
+}
+.row {
+  overflow: hidden;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-2 {
+  width: 50%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+}
+
+/*Klienti*/
+
+.klienti {
+  margin-top: 48px;
+}
+#lrz{
+  width: 220px;
+  height: 56px;
+  margin-left: 100px;
+}
+#lvm {
+  width: 164px;
+  height: 74px;
+  margin-left: 96px;
+}
+#gibson {
+  margin-left: 106px;
+}
+#builder {
+  margin-left: 112px;
+}
+#forestry {
+  margin-left: 90px;
+  width: 165px;
+  height: 28px;
+}
+.1row {
+  align: justify;
 }
