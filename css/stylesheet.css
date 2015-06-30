@@ -2,16 +2,22 @@
 
 header {
   background-color: #473a2d;
-  width: 1400px;
   height: 94px;
 }
+body{
+  font-family: 'open_sans', sans-serif;
+}
+
 .wrapper {
   width: 1400px;
+  margin: auto;
 }
-.wrapper img {
-  width: 180px;
-  height: 55px;
-  margin-top: 27px;
+
+.slider_item {
+  background-image: url("../slider.jpg");
+  background-size: cover;
+  background-color: #f9f7ef;
+  height: 600px;
 }
 .nav_panel {
   float: right;
@@ -38,7 +44,6 @@ header {
 }
 .nav_list a {
   text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
   color: #ffffff;
   text-align: justify;
 }
@@ -65,7 +70,6 @@ header {
   color: #ffffff;
 }
 .slider_text {
-  font-family: 'Open Sans', sans-serif;
   color: #f5f2eb;
   position: absolute;
   left: 68px;
@@ -74,6 +78,7 @@ header {
 }
 .slider_text h3 {
   font-size: 44px;
+  font-weight: 300;
   background-color: #3f3b3c;
   padding: 25px;
   display: inline-block;
@@ -125,7 +130,6 @@ ul.pakalpojumi_lists li::after {
   width: 310px;
   margin-top: 40px;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
 .geodezija img {
@@ -163,17 +167,14 @@ ul.pakalpojumi_lists li::after {
 }
 .table1 p, .table2 p {
   font-size: 18px;
-  font-family: 'Open Sans', sans-serif;
 }
 .table1 th, .table2 th {
-  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   font-size: 14px;
   text-align: left;
   padding: 16px;
 }
 .table1 tbody, .table2 tbody {
-  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   border-bottom: 2px solid #dfd9cf;
 }
@@ -199,7 +200,6 @@ ul.pakalpojumi_lists li::after {
 /*Par mums*/
 
 .parmums {
-  font-family: 'Open Sans', sans-serif;
   background-color: #6d5639;
   display: inline-block;
   color: #b0a79c;
@@ -220,13 +220,41 @@ ul.pakalpojumi_lists li::after {
   padding-right: 15px;
   float: left;
 }
+.col-2 img {
+  display: block;
+  margin: auto;
+  height: 170px;
+  width: 170px;
+  margin-bottom: -30px;
+}
+.col-2 h4 {
+  text-align: center;
+  color: #c7a457;
+  font-size: 36px;
+  font-weight: lighter;
+}
+.col-2 h4::after {
+  content: "";
+  width: 338px;
+  border-bottom: 1px solid;
+  display: block;
+  color: #77634a;
+  margin-left: 150px;
+
+  }
+.contact_box p{
+  text-align: center;
+  font-size: 18px;
+  color: #c7a457;
+  margin-top: -40px;
+}
 
 /*Klienti*/
 
 .klienti {
   margin-top: 48px;
 }
-#lrz{
+#lrz {
   width: 220px;
   height: 56px;
   margin-left: 100px;
