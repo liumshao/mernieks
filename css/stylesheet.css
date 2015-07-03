@@ -6,10 +6,11 @@ header {
 }
 body{
   font-family: 'open_sans', sans-serif;
+  min-width: 1200px;
 }
 
 .wrapper {
-  width: 1400px;
+  width: 1200px;
   margin: auto;
 }
 
@@ -17,7 +18,10 @@ body{
   background-image: url("../slider.jpg");
   background-size: cover;
   background-color: #f9f7ef;
-  height: 600px;
+}
+.slider_item-content {
+    height: 600px;
+    position: relative;
 }
 .nav_panel {
   float: right;
@@ -56,9 +60,7 @@ body{
 
 /*Слайдер*/
 
-.slider img {
-  width: 1400px;
-}
+
 .slider_item {
   position: relative;
 }
@@ -90,7 +92,9 @@ body{
 }
 
 /*Pakalpojumi*/
-
+.pakalpojumi {
+  background-image: url("../fonspakalpojumi.png");
+}
 #pakalpojumi {
   text-align: center;
   border-bottom: 1px dotted;
@@ -117,13 +121,13 @@ ul.pakalpojumi_lists li::after {
   margin-bottom: 17px;
 }
 .geodezija, .mernieciba, .zemesiericiba {
-  width: 410px;
+  width: 380px;
   color: #534c38;
   overflow: hidden;
   display: inline-block;
   vertical-align: top;
-  margin-left: 40px;
-  margin-bottom: 40px;
+  margin-left:10px;
+  margin-bottom: 10px;
 }
 .text_without_image {
   overflow: hidden;
@@ -154,16 +158,16 @@ ul.pakalpojumi_lists li::after {
 /*Pakalpojumi izcenojumi*/
 
 .table1 {
-  width: 600px;
+  width: 580px;
   display: inline-block;
 }
 .table1 table, .table2 table {
   border-collapse: collapse;
 }
 .table2 {
-  width: 600px;
+  width: 580px;
   display: inline-block;
-  margin-left: 70px;
+  margin-left: 10px;
 }
 .table1 p, .table2 p {
   font-size: 18px;
@@ -201,7 +205,8 @@ ul.pakalpojumi_lists li::after {
 
 .parmums {
   background-color: #6d5639;
-  display: inline-block;
+  background-image: url("../fonsparmums.jpg");
+ background-repeat: repeat;
   color: #b0a79c;
   font-size: 18px;
   text-align: justify;
@@ -250,6 +255,13 @@ ul.pakalpojumi_lists li::after {
 }
 
 /*Klienti*/
+/*a samim kartinkam nado dat' text align justify, vse kartinki nado zasunut v odin div */
+
+/*klientsafter sdelat  content ""
+display inline block
+width 100%
+*/
+
 
 .klienti {
   margin-top: 48px;
@@ -275,6 +287,24 @@ ul.pakalpojumi_lists li::after {
   width: 165px;
   height: 28px;
 }
-.1row {
-  align: justify;
+
+
+.certificate img{
+    width: 28px;
+    height: 39px;
+    float: left;
+    margin-top: 10px;
+    padding: 17px;
+}
+.certificate p{
+  overflow: hidden;
+  font-size: 13px;
+  width: 50%;
+  display: inline;
+  color: #eadfcd;
+}
+.certificate_big {
+  display: inline-block;
+  background-color: #624e36;
+  margin: auto;
 }
