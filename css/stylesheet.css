@@ -259,18 +259,22 @@ ul.pakalpojumi_lists li::after {
 .certificate{
   background-image: url("../certif.png");
   background-repeat: no-repeat;
-  background-color: #624e36;
-  padding-left: 246px;
-  padding-right: 207px;
-  margin: auto;
+  background-position: left center;
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  color: #eadfcd;
 }
 .certificate p{
-  margin-top: 30px;
-  overflow: hidden;
-  font-size: 13px;
-  width: 50%;
-  display: inline;
-  color: #eadfcd;
+  margin-left: 60px;
+  margin-right: 64px;
+  padding:
+
+}
+.certificate_big {
+  background-color: #624e36;
+  text-align: center;
+
 }
 
 
@@ -296,6 +300,9 @@ margin-top: 53px;
 
 
  /*Kontakti*/
-.kontakti {
-
+.contacts {
+  background-color: #6d5639;
+  background-image: url("../fonsparmums.jpg");
+  background-repeat: repeat;
+  color: #b0a79c;
 }
