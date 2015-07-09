@@ -7,11 +7,13 @@ header {
 body{
   font-family: 'open_sans', sans-serif;
   min-width: 1200px;
+  font-weight: 300;
 }
 
 .wrapper {
   width: 1200px;
   margin: auto;
+  padding-top: 26px;
 }
 
 .slider_item {
@@ -163,6 +165,7 @@ ul.pakalpojumi_lists li::after {
 }
 .table1 table, .table2 table {
   border-collapse: collapse;
+  font-weight: 600;
 }
 .table2 {
   width: 580px;
@@ -253,6 +256,23 @@ ul.pakalpojumi_lists li::after {
   color: #c7a457;
   margin-top: -40px;
 }
+.certificate{
+  background-image: url("../certif.png");
+  background-repeat: no-repeat;
+  background-color: #624e36;
+  padding-left: 246px;
+  padding-right: 207px;
+  margin: auto;
+}
+.certificate p{
+  margin-top: 30px;
+  overflow: hidden;
+  font-size: 13px;
+  width: 50%;
+  display: inline;
+  color: #eadfcd;
+}
+
 
 /*Klienti*/
 /*a samim kartinkam nado dat' text align justify, vse kartinki nado zasunut v odin div */
@@ -263,48 +283,19 @@ width 100%
 */
 
 
-.klienti {
-  margin-top: 48px;
-}
-#lrz {
-  width: 220px;
-  height: 56px;
-  margin-left: 100px;
-}
-#lvm {
-  width: 164px;
-  height: 74px;
-  margin-left: 96px;
-}
-#gibson {
-  margin-left: 106px;
-}
-#builder {
-  margin-left: 112px;
-}
-#forestry {
-  margin-left: 90px;
-  width: 165px;
-  height: 28px;
-}
+.logos {
+text-align: justify;
+margin-top: 53px;
+ }
 
-
-.certificate img{
-    width: 28px;
-    height: 39px;
-    float: left;
-    margin-top: 10px;
-    padding: 17px;
-}
-.certificate p{
-  overflow: hidden;
-  font-size: 13px;
-  width: 50%;
-  display: inline;
-  color: #eadfcd;
-}
-.certificate_big {
+ .logos::after {
+  content: "";
   display: inline-block;
-  background-color: #624e36;
-  margin: auto;
+  width: 100%;
+ }
+
+
+ /*Kontakti*/
+.kontakti {
+
 }
