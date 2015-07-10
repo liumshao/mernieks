@@ -9,28 +9,32 @@
 </head>
 
 <body>
-  <header>
-    <nav>
+  <header class="site-header">
+
       <div class="wrapper">
-        <img src="logomernieks.png" alt="Mernieks logo">
-        <div class="nav_panel">
-          <div class="nav_menu">
+        <nav class="site-navbar">
+          <img class="logo_header" src="logomernieks.png" alt="Mernieks logo">
+          <div class="nav_panel">
             <ul class="nav_list">
               <li><a href="#">Såkums</a></li>
               <li><a href="#pakalpojumi">Pakalpojumi</a></li>
               <li><a href="#parmums">Par mums</a></li>
               <li><a href="#klienti">Klienti</a></li>
             </ul>
-          </div>
-          <div class="nav_lang">
-            <ul class="nav_list">
+            <ul class="nav_list nav_condensed">
               <li><a href="#">RU</a></li>
               <li><a href="#">EN</a></li>
             </ul>
+            <!-- <div class="nav_menu">
+
+            </div>
+            <div class="nav_lang">
+
+            </div> -->
           </div>
-        </div>
+        </nav>
       </div>
-    </nav>
+
   </header>
 
   <section>
@@ -251,18 +255,36 @@
 
 
   <!--Контакты-->
-  <section>
-    <div class="wrapper">
-      <div class="contacts" <h2 id="pakalpojumi">Kontakti</h2>
-        SIA "VENTSPILS MĒRNIEKS” tālrunis: + 371 29235562, 29114401 e-pasts: birojs@ventspilsmernieks.lv Vasarnīcu iela 9 Ventspils, LV-3601
+  <footer>
+    <div class="contacts">
+      <div class="wrapper">
+        <h2 id="pakalpojumi">Kontakti</h2>
+        <img class="footer_img" src="karte.png" alt="Karte">
+        <div class="text">
+          <img src="logo_footer.png" alt="logo Footer">
+          <p>SIA "VENTSPILS MĒRNIEKS”
+            <br> tālrunis: + 371 29235562, 29114401
+            <br> e-pasts: birojs@ventspilsmernieks.lv
+            <br> Vasarnīcu iela 9
+            <br> Ventspils, LV-3601</p>
+        </div>
 
-        <!--Форма обратной связи-- >
-Sazināties ar mums
+        <div class="form">
+          <p>Sazināties ar mums</p>
+          <form action="demo_form.asp">
+            <div class="">
+              <input type="text" name="Vards" placeholder="Vards">
+              <input type="text" name="Uzvards" placeholder="Uzvards">
+            </div>
 
-<!--placeholders!-->
+            <textarea placeholder="Teksts" rows="8" cols="50" ></textarea>
+
+            <input type="submit" value="Sūtīt">
+          </form>
+        </div>
       </div>
     </div>
-  </section>
+  </footer>
 
 
 </body>

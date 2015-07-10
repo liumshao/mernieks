@@ -1,63 +1,71 @@
 /*Navigation menu*/
 
-header {
+.site-header {
   background-color: #473a2d;
-  height: 94px;
 }
+
 body{
   font-family: 'open_sans', sans-serif;
   min-width: 1200px;
   font-weight: 300;
+  margin: 0;
 }
 
 .wrapper {
   width: 1200px;
-  margin: auto;
-  padding-top: 26px;
+  margin: 0 auto;
 }
 
-.slider_item {
-  background-image: url("../slider.jpg");
-  background-size: cover;
-  background-color: #f9f7ef;
+/* Header block */
+.logo_header {
+  margin: 25px 0;
+  float: left;
 }
-.slider_item-content {
-    height: 600px;
-    position: relative;
+.site-navbar::after {
+  content: "  ";
+  display: table;
+  clear: both;
 }
 .nav_panel {
   float: right;
-  display: inline;
 }
+
+/*.nav_lang {
+  float: right;
+  border-left: 1px solid #cfcbc8;
+}*/
+
+/*.nav_lang li {
+  font-size: 13px;
+  margin: 24px;
+}*/
+
 .nav_list {
   float: left;
   margin-right: 50px;
+  padding: 0;
 }
-.nav_lang {
-  float: right;
+.nav_list.nav_condensed {
   border-left: 1px solid #cfcbc8;
+}
+.nav_list.nav_condensed li {
+  font-size: 13px;
 }
 .nav_list li {
   list-style-type: none;
-  display: inline;
+  display: inline-block;
   font-size: 15px;
   color: #ffffff;
-  margin: 24px;
 }
-.nav_lang li {
-  font-size: 13px;
-  margin: 24px;
-}
+
 .nav_list a {
   text-decoration: none;
   color: #ffffff;
-  text-align: justify;
+  padding: 24px;
+  display: block;
 }
-.nav_lang a {
-  color: #ffffff;
-}
-.nav_menu, .nav_lang {
-  display: inline-block;
+.nav_list a:hover {
+  background-color: #5b4d3b;
 }
 
 /*Слайдер*/
@@ -65,7 +73,14 @@ body{
 
 .slider_item {
   position: relative;
+  background-image: url("../slider.jpg");
+  background-size: cover;
+  background-color: #f9f7ef;
 }
+.slider_item-content {
+    height: 600px;
+    position: relative;
+  }
 .slider_dot {
   border-radius: 50%;
   display: inline-block;
@@ -264,34 +279,30 @@ ul.pakalpojumi_lists li::after {
   width: 50%;
   text-align: left;
   color: #eadfcd;
+  font-size: 13px;
 }
 .certificate p{
-  margin-left: 60px;
-  margin-right: 64px;
-  padding:
+  margin-left: 50px;
 
 }
 .certificate_big {
   background-color: #624e36;
   text-align: center;
+  font-size: 0;
+  padding-left: 57px;
+  padding-right: 57px;
 
 }
 
 
 /*Klienti*/
-/*a samim kartinkam nado dat' text align justify, vse kartinki nado zasunut v odin div */
-
-/*klientsafter sdelat  content ""
-display inline block
-width 100%
-*/
-
-
 .logos {
 text-align: justify;
 margin-top: 53px;
  }
-
+.logos img {
+  margin: 30px;
+}
  .logos::after {
   content: "";
   display: inline-block;
@@ -305,4 +316,49 @@ margin-top: 53px;
   background-image: url("../fonsparmums.jpg");
   background-repeat: repeat;
   color: #b0a79c;
+  overflow: hidden;
+}
+.footer_img {
+  padding-top: 46px;
+  float: left;
+ }
+.text {
+  text-align: center;
+  padding-top: 40px;
+}
+.text p{
+  color:  #c7a457;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 140px;
+}
+ /*форма обратной связи*/
+.form p{
+  text-transform: uppercase;
+  color: #b7a071;
+}
+input[type="text"] {
+background-color: #7f6c42;
+border: 1px solid #7f6c42;
+height: 33px;
+   width: 196px;
+   margin-right: 20px;
+}
+textarea {
+  background-color: #7f6c42;
+  border: 1px solid #7f6c42;
+  height: 143px;
+     width: 419px;
+     margin-top: 23px;
+     resize: none;
+}
+
+input[type="submit"] {
+    width: 110px;
+    height: 41px;
+    margin-top: 24px;
+    display: block;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+
 }
