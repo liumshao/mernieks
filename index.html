@@ -11,29 +11,29 @@
 <body>
   <header class="site-header">
 
-      <div class="wrapper">
-        <nav class="site-navbar">
-          <img class="logo_header" src="logomernieks.png" alt="Mernieks logo">
-          <div class="nav_panel">
-            <ul class="nav_list">
-              <li><a href="#">Såkums</a></li>
-              <li><a href="#pakalpojumi">Pakalpojumi</a></li>
-              <li><a href="#parmums">Par mums</a></li>
-              <li><a href="#klienti">Klienti</a></li>
-            </ul>
-            <ul class="nav_list nav_condensed">
-              <li><a href="#">RU</a></li>
-              <li><a href="#">EN</a></li>
-            </ul>
-            <!-- <div class="nav_menu">
+    <div class="wrapper">
+      <nav class="site-navbar">
+        <img class="logo_header" src="logomernieks.png" alt="Mernieks logo">
+        <div class="nav_panel">
+          <ul class="nav_list">
+            <li><a href="#">Såkums</a></li>
+            <li><a href="#pakalpojumi">Pakalpojumi</a></li>
+            <li><a href="#parmums">Par mums</a></li>
+            <li><a href="#klienti">Klienti</a></li>
+          </ul>
+          <ul class="nav_list nav_condensed">
+            <li><a href="#">RU</a></li>
+            <li><a href="#">EN</a></li>
+          </ul>
+          <!-- <div class="nav_menu">
 
             </div>
             <div class="nav_lang">
 
             </div> -->
-          </div>
-        </nav>
-      </div>
+        </div>
+      </nav>
+    </div>
 
   </header>
 
@@ -259,31 +259,38 @@
     <div class="contacts">
       <div class="wrapper">
         <h2 id="pakalpojumi">Kontakti</h2>
-        <img class="footer_img" src="karte.png" alt="Karte">
-        <div class="text">
-          <img src="logo_footer.png" alt="logo Footer">
-          <p>SIA "VENTSPILS MĒRNIEKS”
-            <br> tālrunis: + 371 29235562, 29114401
-            <br> e-pasts: birojs@ventspilsmernieks.lv
-            <br> Vasarnīcu iela 9
-            <br> Ventspils, LV-3601</p>
-        </div>
 
-        <div class="form">
-          <p>Sazināties ar mums</p>
-          <form action="demo_form.asp">
-            <div class="">
-              <input type="text" name="Vards" placeholder="Vards">
-              <input type="text" name="Uzvards" placeholder="Uzvards">
+        <div class="grid_footer">
+          <div class="row1">
+            <div class="col-3">
+
+              <img class="footer_img" src="karte.png" alt="Karte">
+            </div>
+            <div class="col-3">
+              <div class="text">
+                <img src="logo_footer.png" alt="logo Footer">
+                <p>SIA "VENTSPILS MĒRNIEKS”</p>
+                <p class="bold_talrunis">tālrunis: + 371 29235562, 29114401</p>
+                <p>e-pasts: birojs@ventspilsmernieks.lv</p>
+                <p>Vasarnīcu iela 9</p>
+                <p>Ventspils, LV-3601</p>
+              </div>
             </div>
 
-            <textarea placeholder="Teksts" rows="8" cols="50" ></textarea>
-
-            <input type="submit" value="Sūtīt">
-          </form>
-        </div>
-      </div>
-    </div>
+            <div class="col-3">
+              <div class="form">
+                <p>Sazināties ar mums</p>
+                <form action="demo_form.asp">
+                  <div class="">
+                    <input type="text" class="contact_field left" name="Vards" placeholder="Vards">
+                    <input type="text" class="contact_field right" name="Uzvards" placeholder="Uzvards">
+                  </div>
+                  <textarea placeholder="Teksts"></textarea>
+                  <button type="submit" class="submit">Sūtīt &rarr;</button>
+                </form>
+              </div>
+            </div>
+          </div>
   </footer>
 
 

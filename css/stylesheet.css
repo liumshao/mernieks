@@ -9,6 +9,7 @@ body{
   min-width: 1200px;
   font-weight: 300;
   margin: 0;
+  color: #473a15;
 }
 
 .wrapper {
@@ -199,12 +200,14 @@ ul.pakalpojumi_lists li::after {
 .table1 tbody, .table2 tbody {
   font-size: 14px;
   border-bottom: 2px solid #dfd9cf;
+  font-weight: 400;
 }
 .table1 td, .table2 td {
   padding: 16px;
 }
 .table1 tfoot {
   font-style: italic;
+  font-weight: 400;
 }
 .table1 tbody tr:nth-child(even) {
   background-color: #fff;
@@ -291,9 +294,7 @@ ul.pakalpojumi_lists li::after {
   font-size: 0;
   padding-left: 57px;
   padding-right: 57px;
-
 }
-
 
 /*Klienti*/
 .logos {
@@ -311,54 +312,104 @@ margin-top: 53px;
 
 
  /*Kontakti*/
+
+ .row1 {
+   overflow: hidden;
+   margin-left: -15px;
+   margin-right: -15px;
+ }
+ .col-3 {
+   width: 33.3333%;
+   box-sizing: border-box;
+   overflow: hidden;
+   padding-left: 15px;
+   padding-right: 15px;
+   float: left;
+   padding-top: 46px;
+   display: inline-block;
+   color: #ac8d4f;
+
+
+ }
+
 .contacts {
   background-color: #6d5639;
   background-image: url("../fonsparmums.jpg");
   background-repeat: repeat;
-  color: #b0a79c;
+  color: #ac8d4fs;
   overflow: hidden;
 }
 .footer_img {
-  padding-top: 46px;
   float: left;
+  width: 100%;
  }
 .text {
   text-align: center;
-  padding-top: 40px;
+
 }
 .text p{
   color:  #c7a457;
   font-size: 16px;
   text-align: center;
-  margin-bottom: 140px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
  /*форма обратной связи*/
 .form p{
   text-transform: uppercase;
-  color: #b7a071;
+  color: #c7a457;
+  margin-top: 0px;
 }
-input[type="text"] {
+.bold_talrunis {
+  font-weight: bold;
+  color: #eacc8b;
+}
+.contact_field {
 background-color: #7f6c42;
-border: 1px solid #7f6c42;
+border: 0px solid #7f6c42;
 height: 33px;
-   width: 196px;
-   margin-right: 20px;
-}
-textarea {
-  background-color: #7f6c42;
-  border: 1px solid #7f6c42;
-  height: 143px;
-     width: 419px;
-     margin-top: 23px;
-     resize: none;
+width: 169px;
+color: #a38a55;
 }
 
-input[type="submit"] {
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #a38a55;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #a38a55;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #a38a55;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #a38a55;
+}
+.contact_field.left {
+float: left;
+}
+.contact_field.right {
+float: right;
+}
+
+textarea {
+  background-color: #7f6c42;
+  border: 0px solid #7f6c42;
+  height: 143px;
+     width: 100%;
+     margin-top: 23px;
+     resize: none;
+     box-sizing: border-box;
+}
+
+.submit {
     width: 110px;
     height: 41px;
     margin-top: 24px;
     display: block;
     border-radius: 0px;
-    -webkit-border-radius: 0px;
-
+    background-color: #b1965c;
+    border: 0px;
+    color: #ffffff;
 }
